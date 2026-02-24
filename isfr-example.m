@@ -89,7 +89,7 @@ icdf_mu = make_icdf(mu, p_mu);               % ICDF values in mu = cos(theta)
 % We do not need spatial fluence, only detected photon statistics.
 % Therefore, we can use a minimal homogeneous volume and rely on unit scaling.
 volSize_mm = 100;                            % physical edge size [mm] (arbitrary, large)
-volN       = 2;                              % single voxel in each dimension
+volN       = 1;                              % single voxel in each dimension
 voxSize_mm = volSize_mm / volN;              % voxel size in mm
 
 % Initialize configuration struct required by mcxlabcl.
