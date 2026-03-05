@@ -92,7 +92,7 @@ volSize_mm = 100;                            % physical edge size [mm] (arbitrar
 volN       = 1;                              % single voxel in each dimension
 voxSize_mm = volSize_mm / volN;              % voxel size in mm
 
-% Initialize configuration struct required by mcxlabcl.
+% Initialize configuration struct required by mcxlab.
 cfg = struct();                              % MCX configuration container
 
 % Define voxel-to-mm scaling so MCX outputs can be converted to mm.
@@ -170,7 +170,7 @@ cfg.respin = 1;                              % respin count (kept minimal)
 
 %% ------------------------------- Run MCX --------------------------------
 % Execute MCX simulation (CUDA; requires mcxlab on path).
-[~, det] = mcxlabcl(cfg);                    % det contains detected photon data
+[~, det] = mcxlab(cfg);                    % det contains detected photon data
 
 %% ========================================================================
 %   Map and scale detected-photon outputs to physical units
