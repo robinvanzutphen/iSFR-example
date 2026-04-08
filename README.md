@@ -10,7 +10,7 @@ The code is intended solely as an illustrative example of the implementation des
 
 This example code was tested with:
 
-- **MCX v2025.10 (“Jumbo Jolt”)**
+- **MCX v2025 (“Jumbo Jolt”)**
 - **MCXLAB**
 - **MATLAB R2025a**
 - **Ubuntu 24.04.2 LTS**
